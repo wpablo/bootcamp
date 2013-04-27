@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .page-header
+    h1 Documents
+  .row-fluid
+    ul
+      each doc in docs
+        li
+          a(href="/doc/#{doc._id}")= doc.title || 'untitled'

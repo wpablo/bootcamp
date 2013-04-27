@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .page-header
+    h1.doc-title= doc.title || 'untitled'
+  .row-fluid(style='height: 85%;')
+    textarea#editor.span6= doc.content
+
+  script
+    window.docId = "#{doc._id.toString()}";

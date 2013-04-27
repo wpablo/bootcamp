@@ -1,0 +1,8 @@
+.navbar .nav > li > a.disabled {
+  color: rgb(185, 185, 194);
+  cursor: default;
+}
+.navbar .nav > li > a.disabled:hover {
+  color: rgb(185, 185, 194);
+  cursor: default;
+}
