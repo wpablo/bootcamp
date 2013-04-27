@@ -5,7 +5,7 @@ var getDb    = require('mongo-getdb');
 var docs     = require('./lib/docs');
 var passport = require('passport');
 
-getDb.init({url: 'mongodb://bootcamp:Pablo77@ds045077.mongolab.com:45077/bootcamp-pablo'});
+getDb.init({url: process.env.DB || 'mongodb://bootcamp:Pablo77@ds045077.mongolab.com:45077/bootcamp-pablo'});
 
 
 require('./lib/setupPassport');
@@ -98,6 +98,6 @@ app.get('/login',
   });
 
 http.createServer(app)
-    .listen(8080, function () {
-      console.log('listening on http://localhost:8080');
+ .listen(process.env.PORT || 8080, function () {
+      console.log('listening on http://localhost:' + process.env.PORT || 8080);
     });
