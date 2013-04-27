@@ -1,0 +1,29 @@
+Sat Apr 27 2013 16:32:48 GMT-0300 (Hora estándar de Argentina):
+{ [Error: No account information found. Please import credentials using "azure account import <file>".]
+  stack: [Getter/Setter],
+  __frame: 
+   { name: 'site_doSitesGet__16',
+     line: 972,
+     file: 'C:\\Users\\usuario\\AppData\\Roaming\\npm\\node_modules\\azure-cli\\lib\\commands\\site._js',
+     prev: 
+      { name: 'lookupSiteWebSpace',
+        line: 573,
+        file: 'C:\\Users\\usuario\\AppData\\Roaming\\npm\\node_modules\\azure-cli\\lib\\commands\\site._js',
+        prev: [Object],
+        active: false,
+        offset: 2,
+        col: 16 },
+     active: false,
+     offset: 3,
+     col: 17 },
+  rawStack: [Getter] }
+Error: No account information found. Please import credentials using "azure account import <file>".
+    at Object.readFromFile (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\keyFiles.js:32:11)
+    at Command.account.managementCertificate (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\account.js:466:21)
+    at getChannel (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:40:23)
+    at site_doSpacesGet__15 (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:939:26)
+    at site_doSitesGet__16 (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:975:17)
+    at lookupSiteWebSpace (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:575:16)
+    at lookupSiteNameAndWebSpace (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:594:4)
+    at ensureRepositoryUri (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\site._js:662:19)
+    at __2 (C:\Users\usuario\AppData\Roaming\npm\node_modules\azure-cli\lib\commands\log._js:84:26)
